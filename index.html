@@ -258,31 +258,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            The advancement of real-time 3D scene reconstruction and novel view synthesis has been 
+            significantly propelled by 3D Gaussian Splatting (3DGS). However, effectively training 
+            large-scale 3DGS and rendering it in real-time across various scales remains challenging. 
+            This paper introduces CityGaussian (CityGS), which employs a novel divide-and-conquer 
+            training approach and Level-of-Detail (LoD) strategy for efficient large-scale 3DGS 
+            training and rendering. Specifically, the global scene prior and adaptive training data 
+            selection enables efficient training and seamless fusion. Based on fused Gaussian primitives, 
+            we generate different detail levels through compression, and realize fast rendering across 
+            various scales through the proposed block-wise detail levels selection and aggregation 
+            strategy. Extensive experimental results on large-scale scenes demonstrate that our approach 
+            attains state-of-the-art rendering quality, enabling consistent real-time rendering of 
+            large-scale scenes across vastly different scales.
           </p>
         </div>
       </div>
