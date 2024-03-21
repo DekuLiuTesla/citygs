@@ -293,33 +293,31 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+      <!-- CityGS: No LoD. -->
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            Without our proposed LoD technique, the MatrixCity is depicted by 25 million Gaussians. The consequent speed of 18 FPS leads to unpleasant roaming experience.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+            <source src="./static/videos/video_10m_org.mp4"
                     type="video/mp4">
           </video>
         </div>
       </div>
       <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
+      <!-- CityGS: No LoD. -->
       <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              Without support of LoD, our CityGS can be rendered in real-time under vastly different scales. The average speed is 36 FPS.
             </p>
             <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+              <source src="./static/videos/video_10m.mp4"
                       type="video/mp4">
             </video>
           </div>
