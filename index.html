@@ -293,31 +293,31 @@
 
     <div class="columns is-centered">
 
-      <!-- CityGS: No LoD. -->
+      <!-- CityGS. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">CityGS: No LoD</h2>
+          <h2 class="title is-3">CityGS</h2>
           <p>
-            Without our proposed LoD technique, the MatrixCity is depicted by 25 million Gaussians. The consequent speed of 18 FPS leads to unpleasant roaming experience.
+            With the support of LoD, our CityGS can be rendered in real-time under vastly different scales. The average speed is 36 FPS.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video_10m_org.mp4"
+          <video id="video_10m" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_10m.mp4"
                     type="video/mp4">
           </video>
         </div>
       </div>
-      <!--/ CityGS: No LoD. -->
+      <!--/ CityGS. -->
 
-      <!-- CityGS. -->
+      <!-- CityGS: No LoD -->
       <div class="column">
-        <h2 class="title is-3">CityGS.</h2>
+        <h2 class="title is-3">CityGS: No LoD</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Without support of LoD, our CityGS can be rendered in real-time under vastly different scales. The average speed is 36 FPS.
+              Without our proposed LoD technique, the MatrixCity is depicted by 25 million Gaussians. The consequent speed of 18 FPS leads to unpleasant roaming experience.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/video_10m.mp4"
+            <video id="video_10m_org" controls playsinline height="100%">
+              <source src="./static/videos/video_10m_org.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -325,7 +325,7 @@
         </div>
       </div>
     </div>
-    <!--/ CityGS. -->
+    <!--/ CityGS: No LoD. -->
 
     <!-- Animation. -->
     <div class="columns is-centered">
