@@ -331,7 +331,60 @@
     </div>
     <!--/ CityGS: No LoD. -->
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Visual Comparisons</h2>
+    <div class="content has-text-justified">
+      <p>
+
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+
+              <div class="image-compare shadow-md rounded mb-16">
+                <img src="static/images/rubble_mega_8.jpg" alt="" />
+                <img src="static/images/rubble_citygs_8.png" alt="" />
+              </div>
   
+              <div class="image-compare shadow-md rounded mb-16">
+                <img src="static/images/building_switch_5.jpg" alt="" />
+                <img src="static/images/building_citygs_5.png" alt="" />
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+           
+            <div class="image-compare shadow-md rounded mb-16">
+              <img src="static/images/residence_gp_20.jpg" alt="" />
+              <img src="static/images/residence_citygs_20.png" alt="" />
+            </div>
+
+            <div class="image-compare shadow-md rounded mb-16">
+              <img src="static/images/matrixcity_3dgs_176.jpg" alt="" />
+              <img src="static/images/matrixcity_citygs_176.png" alt="" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -390,17 +443,52 @@
 
 <script>
   let imageCompareViewers = document.querySelectorAll(".image-compare");
-  let configs = { 
+  let configs = [
+  { 
     addCircle: true, 
     verticalMode: false, 
     hoverStart: true,
     showLabels: true,
     labelOptions: {
-      before: 'Before',  
-      after: 'After',
+      before: 'MegaNeRF [Turki 2022]',  
+      after: 'Ours',
       onHover: false
     },
-  };
+  },
+  { 
+    addCircle: true, 
+    verticalMode: false, 
+    hoverStart: true,
+    showLabels: true,
+    labelOptions: {
+      before: 'SwitchNeRF [Zhenxing 2022]',  
+      after: 'Ours',
+      onHover: false
+    },
+  },
+  { 
+    addCircle: true, 
+    verticalMode: false, 
+    hoverStart: true,
+    showLabels: true,
+    labelOptions: {
+      before: 'GPNeRF [Yuqi 2023]',  
+      after: 'Ours',
+      onHover: false
+    },
+  },
+  { 
+    addCircle: true, 
+    verticalMode: false, 
+    hoverStart: true,
+    showLabels: true,
+    labelOptions: {
+      before: '3DGS [Bernhard 2023]',  
+      after: 'Ours',
+      onHover: false
+    },
+  }
+];
   
   imageCompareViewers.forEach((element, i) => {
     new ImageCompare(element, configs).mount();
