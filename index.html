@@ -327,69 +327,135 @@
     </div>
     <!--/ CityGS: No LoD. -->
 
-    <!-- Animation. -->
+  <section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Visual Comparisons</h2>
+    <div class="content has-text-justified">
+      <p>
+
+      </p>
+    </div>
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <div id="example1" class="bal-container-small">
+      
+                <div class="bal-after">
+                  <img src="static/images/rubble_citygs_8.png">
+                  <div class="bal-afterPosition afterLabel">
+                    Ours
+                  </div>
+                </div>
+              
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                  <img src="static/images/rubble_mega_8.jpg">
+                    <div class="bal-beforePosition beforeLabel">
+                      MegaNeRF [Turki 2022]
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              
+              </div>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+
+              <div id="example2" class="bal-container-small">
+      
+                <div class="bal-after">
+                  <img src="static/images/building_citygs_5.png">
+                  <div class="bal-afterPosition afterLabel">
+                    Ours
+                  </div>
+                </div>
+              
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                  <img src="static/images/building_switch_5.jpg">
+                    <div class="bal-beforePosition beforeLabel">
+                      SwitchNeRF [Zhenxing 2022]
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              
+              </div>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
           </div>
         </div>
-        <br/>
-        <!--/ Interpolating. -->
+      </div>
+      
+      <!--/ Visual Effects. -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
+      <!-- Matting. -->
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+           
+            <div id="example4" class="bal-container-small">
+              <div class="bal-after">
+                <img src="static/images/residence_citygs_20.png">
+                <div class="bal-afterPosition afterLabel">
+                  Ours
+                </div>
+              </div>
+            
+              <div class="bal-before">
+                <div class="bal-before-inset">
+                <img src="static/images/residence_gp_20.jpg">
+                  <div class="bal-beforePosition beforeLabel">
+                    GPNeRF [Yuqi 2023]
+                  </div>
+                </div>
+              </div>
+            
+              <div class="bal-handle">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+            
+            </div>
 
+            <div id="example5" class="bal-container-small">
+              <div class="bal-after">
+                <img src="static/images/matrixcity_citygs_176.png">
+                <div class="bal-afterPosition afterLabel">
+                  Ours
+                </div>
+              </div>
+            
+              <div class="bal-before">
+                <div class="bal-before-inset">
+                <img src="static/images/matrixcity_3dgs_176.png">
+                  <div class="bal-beforePosition beforeLabel">
+                    3DGS [Kerbl 2023]
+                  </div>
+                </div>
+              </div>
+            
+              <div class="bal-handle">
+                <span class=" handle-left-arrow"></span>
+                <span class="handle-right-arrow"></span>
+              </div>
+            
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!--/ Animation. -->
+  </div>
+</section>
 
 
     <!-- Concurrent Work. -->
