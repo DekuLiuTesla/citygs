@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/image-compare-viewer.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -38,6 +39,7 @@
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/image-compare-viewer.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
 <body>
@@ -331,128 +333,10 @@
 <section class="section">
 <div class="container is-max-desktop">
   <h2 class="title is-3">Visual Comparisons</h2>
-  <div class="content has-text-justified">
-    <p>
-
-    </p>
-  </div>
   <div class="columns is-centered">
-    <!-- Visual Effects. -->
-    <div class="column">
-      <div class="content">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div id="example1" class="bal-container-small">
-    
-              <div class="bal-after">
-                <img src="static/images/rubble_citygs_8.png">
-                <div class="bal-afterPosition afterLabel">
-                  Ours
-                </div>
-              </div>
-            
-              <div class="bal-before">
-                <div class="bal-before-inset">
-                <img src="static/images/rubble_mega_8.jpg">
-                  <div class="bal-beforePosition beforeLabel">
-                    MegaNeRF [Turki 2022]
-                  </div>
-                </div>
-              </div>
-            
-              <div class="bal-handle">
-                <span class=" handle-left-arrow"></span>
-                <span class="handle-right-arrow"></span>
-              </div>
-            
-            </div>
-
-
-            <div id="example2" class="bal-container-small">
-    
-              <div class="bal-after">
-                <img src="static/images/building_citygs_5.png">
-                <div class="bal-afterPosition afterLabel">
-                  Ours
-                </div>
-              </div>
-            
-              <div class="bal-before">
-                <div class="bal-before-inset">
-                <img src="static/images/building_switch_5.jpg">
-                  <div class="bal-beforePosition beforeLabel">
-                    SwitchNeRF [Zhenxing 2022]
-                  </div>
-                </div>
-              </div>
-            
-              <div class="bal-handle">
-                <span class=" handle-left-arrow"></span>
-                <span class="handle-right-arrow"></span>
-              </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!--/ Visual Effects. -->
-
-    <!-- Matting. -->
-    <div class="column">
-      <div class="columns is-centered">
-        <div class="column content">
-         
-          <div id="example4" class="bal-container-small">
-            <div class="bal-after">
-              <img src="static/images/residence_citygs_20.png">
-              <div class="bal-afterPosition afterLabel">
-                Ours
-              </div>
-            </div>
-          
-            <div class="bal-before">
-              <div class="bal-before-inset">
-              <img src="static/images/residence_gp_20.jpg">
-                <div class="bal-beforePosition beforeLabel">
-                  GPNeRF [Yuqi 2023]
-                </div>
-              </div>
-            </div>
-          
-            <div class="bal-handle">
-              <span class=" handle-left-arrow"></span>
-              <span class="handle-right-arrow"></span>
-            </div>
-          
-          </div>
-
-          <div id="example5" class="bal-container-small">
-            <div class="bal-after">
-              <img src="static/images/matrixcity_citygs_176.png">
-              <div class="bal-afterPosition afterLabel">
-                Ours
-              </div>
-            </div>
-          
-            <div class="bal-before">
-              <div class="bal-before-inset">
-              <img src="static/images/matrixcity_3dgs_176.png">
-                <div class="bal-beforePosition beforeLabel">
-                  3DGS [Kerbl 2023]
-                </div>
-              </div>
-            </div>
-          
-            <div class="bal-handle">
-              <span class=" handle-left-arrow"></span>
-              <span class="handle-right-arrow"></span>
-            </div>
-          
-          </div>
-        </div>
-      </div>
+    <div id="image-compare">
+      <img src="static/images/matrixcity_3dgs_176.png" alt="" />
+      <img src="static/images/matrixcity_citygs_176.png" alt="" />
     </div>
   </div>
 </div>
@@ -502,24 +386,6 @@
     </div>
   </div>
 </footer>
-
-<script src="static/js/script.js"></script>
-
-<script>
-    new BeforeAfter({
-        id: '#example1'
-    });
-    new BeforeAfter({
-        id: '#example2'
-    });
-    new BeforeAfter({
-        id: '#example4'
-    });
-    new BeforeAfter({
-        id: '#example5'
-    });
-
-</script>
 
 </body>
 </html>
