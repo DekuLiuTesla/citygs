@@ -41,6 +41,8 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/image-compare-viewer.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+
 </head>
 <body>
 
@@ -330,16 +332,15 @@
     <!--/ CityGS: No LoD. -->
 </section>
   
+
 <section class="section">
-<div class="container is-max-desktop">
-  <h2 class="title is-3">Visual Comparisons</h2>
-  <div class="columns is-centered">
-    <div id="image-compare">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Visual Comparisons</h2>
+    <div class="image-compare shadow-md rounded mb-16">
       <img src="static/images/matrixcity_3dgs_176.png" alt="" />
       <img src="static/images/matrixcity_citygs_176.png" alt="" />
     </div>
   </div>
-</div>
 </section>
 
 <section class="section" id="BibTeX">
@@ -386,6 +387,25 @@
     </div>
   </div>
 </footer>
+
+<script>
+  let imageCompareViewers = document.querySelectorAll(".image-compare");
+  let configs = { 
+    addCircle: true, 
+    verticalMode: false, 
+    hoverStart: true,
+    showLabels: true,
+    labelOptions: {
+      before: 'Before',  
+      after: 'After',
+      onHover: false
+    },
+  };
+  
+  imageCompareViewers.forEach((element, i) => {
+    new ImageCompare(element, configs).mount();
+  });
+</script>
 
 </body>
 </html>
