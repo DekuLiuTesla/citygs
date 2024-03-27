@@ -326,86 +326,26 @@
       </div>
     </div>
     <!--/ CityGS: No LoD. -->
+</section>
+  
+<section class="section">
+<div class="container is-max-desktop">
+  <h2 class="title is-3">Visual Comparisons</h2>
+  <div class="content has-text-justified">
+    <p>
 
-  <section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Visual Comparisons</h2>
-    <div class="content has-text-justified">
-      <p>
-
-      </p>
-    </div>
-    <div class="columns is-centered">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <div class="columns is-centered">
-            <div class="column is-full-width">
-              <div id="example1" class="bal-container-small">
-      
-                <div class="bal-after">
-                  <img src="static/images/rubble_citygs_8.png">
-                  <div class="bal-afterPosition afterLabel">
-                    Ours
-                  </div>
-                </div>
-              
-                <div class="bal-before">
-                  <div class="bal-before-inset">
-                  <img src="static/images/rubble_mega_8.jpg">
-                    <div class="bal-beforePosition beforeLabel">
-                      MegaNeRF [Turki 2022]
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="bal-handle">
-                  <span class=" handle-left-arrow"></span>
-                  <span class="handle-right-arrow"></span>
-                </div>
-              
-              </div>
-
-
-              <div id="example2" class="bal-container-small">
-      
-                <div class="bal-after">
-                  <img src="static/images/building_citygs_5.png">
-                  <div class="bal-afterPosition afterLabel">
-                    Ours
-                  </div>
-                </div>
-              
-                <div class="bal-before">
-                  <div class="bal-before-inset">
-                  <img src="static/images/building_switch_5.jpg">
-                    <div class="bal-beforePosition beforeLabel">
-                      SwitchNeRF [Zhenxing 2022]
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="bal-handle">
-                  <span class=" handle-left-arrow"></span>
-                  <span class="handle-right-arrow"></span>
-                </div>
-              
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
+    </p>
+  </div>
+  <div class="columns is-centered">
+    <!-- Visual Effects. -->
+    <div class="column">
+      <div class="content">
         <div class="columns is-centered">
-          <div class="column content">
-           
-            <div id="example4" class="bal-container-small">
+          <div class="column is-full-width">
+            <div id="example1" class="bal-container-small">
+    
               <div class="bal-after">
-                <img src="static/images/residence_citygs_20.png">
+                <img src="static/images/rubble_citygs_8.png">
                 <div class="bal-afterPosition afterLabel">
                   Ours
                 </div>
@@ -413,9 +353,9 @@
             
               <div class="bal-before">
                 <div class="bal-before-inset">
-                <img src="static/images/residence_gp_20.jpg">
+                <img src="static/images/rubble_mega_8.jpg">
                   <div class="bal-beforePosition beforeLabel">
-                    GPNeRF [Yuqi 2023]
+                    MegaNeRF [Turki 2022]
                   </div>
                 </div>
               </div>
@@ -427,9 +367,11 @@
             
             </div>
 
-            <div id="example5" class="bal-container-small">
+
+            <div id="example2" class="bal-container-small">
+    
               <div class="bal-after">
-                <img src="static/images/matrixcity_citygs_176.png">
+                <img src="static/images/building_citygs_5.png">
                 <div class="bal-afterPosition afterLabel">
                   Ours
                 </div>
@@ -437,9 +379,9 @@
             
               <div class="bal-before">
                 <div class="bal-before-inset">
-                <img src="static/images/matrixcity_3dgs_176.png">
+                <img src="static/images/building_switch_5.jpg">
                   <div class="bal-beforePosition beforeLabel">
-                    3DGS [Kerbl 2023]
+                    SwitchNeRF [Zhenxing 2022]
                   </div>
                 </div>
               </div>
@@ -454,40 +396,67 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+    
+    <!--/ Visual Effects. -->
 
+    <!-- Matting. -->
+    <div class="column">
+      <div class="columns is-centered">
+        <div class="column content">
+         
+          <div id="example4" class="bal-container-small">
+            <div class="bal-after">
+              <img src="static/images/residence_citygs_20.png">
+              <div class="bal-afterPosition afterLabel">
+                Ours
+              </div>
+            </div>
+          
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static/images/residence_gp_20.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                  GPNeRF [Yuqi 2023]
+                </div>
+              </div>
+            </div>
+          
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          
+          </div>
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+          <div id="example5" class="bal-container-small">
+            <div class="bal-after">
+              <img src="static/images/matrixcity_citygs_176.png">
+              <div class="bal-afterPosition afterLabel">
+                Ours
+              </div>
+            </div>
+          
+            <div class="bal-before">
+              <div class="bal-before-inset">
+              <img src="static/images/matrixcity_3dgs_176.png">
+                <div class="bal-beforePosition beforeLabel">
+                  3DGS [Kerbl 2023]
+                </div>
+              </div>
+            </div>
+          
+            <div class="bal-handle">
+              <span class=" handle-left-arrow"></span>
+              <span class="handle-right-arrow"></span>
+            </div>
+          
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
+</div>
 </section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
