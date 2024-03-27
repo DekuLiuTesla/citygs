@@ -478,11 +478,11 @@
       onHover: false
     },
   }
-];
+  ];
   
   imageCompareViewers.forEach((element, i) => {
-    new ImageCompare(element, configs).mount();
-  });
+      new ImageCompare(element, configs[i]).mount();
+    });
 </script>
 
 </body>
