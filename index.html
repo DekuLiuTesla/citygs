@@ -46,46 +46,6 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
 
 <section class="hero">
   <div class="hero-body">
@@ -181,7 +141,7 @@
 
 <section class="section">
   <div class="columns is-centered has-text-centered">
-    <div class="column is-three-fifths">
+    <div class="column is-four-fifths">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-building">
           <video poster="" id="building" autoplay controls muted loop playsinline height="100%">
@@ -196,7 +156,7 @@
           </video>
         </div>
         <div class="item item-residence">
-          <video poster="" id="residence" autoplay controls muted loop playsinline height="95%">
+          <video poster="" id="residence" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/residence.mp4"
                     type="video/mp4">
           </video>
@@ -276,7 +236,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Without our proposed LoD technique, the MatrixCity is depicted by 25 million Gaussians. The consequent speed of 18 FPS leads to unpleasant roaming experience.
+              Without our proposed LoD technique, the MatrixCity is depicted by 25 million Gaussians. The consequent speed of 18 FPS (tested on A100) leads to unpleasant roaming experience.
             </p>
             <!-- <video id="video_10m_short" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/video_10m_short.mp4"
@@ -293,7 +253,7 @@
         <div class="content">
           <h2 class="title is-3">CityGS</h2>
           <p>
-            With the support of LoD, our CityGS can be rendered in real-time under vastly different scales. The average speed is 36 FPS.
+            With the support of LoD, our CityGS can be rendered in real-time under vastly different scales. The average speed is 36 FPS (tested on A100).
           </p>
           <!-- <video id="video_10m" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/video_10m.mp4"
@@ -414,10 +374,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="http://www-sop.inria.fr/reves/Basilic/2021/KPLD21/">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="#top" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -425,16 +385,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            We thank the authors of <a href="https://nerfies.github.io/">Nerfies</a> that kindly open sourced the template of this website.
           </p>
         </div>
       </div>
