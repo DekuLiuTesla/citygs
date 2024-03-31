@@ -1,6 +1,6 @@
 # CityGS
 
-This is the repository that contains source code for the [CityGS website](https://dekuliutesla.github.io/citygs.github.io/).
+This is the repository that contains source code for the [CityGS website](https://dekuliutesla.github.io/citygs/).
 
 If you find CityGS useful for your work please cite:
 ```
